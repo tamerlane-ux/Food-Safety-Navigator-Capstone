@@ -12,9 +12,13 @@ Today, consumers still do not truly understand the full impact of the foods they
 
 Existing labeling solutions, such as the UK Traffic Lights, EU Reference Intake (RI), Chilean food-labelling law, and Australia’s Health Star Rating System, were important steps forward. Their simplicity is appealing, but they remain incomplete.
 
+![Food labelling systems around the world](tools/food_labelling_systems.jpg)
+
 These systems evaluate only basic nutrient values — fat, sugar, salt, calories — while ignoring deeper risk factors such as additives, colorants, preservatives, emulsifiers, and ultra-processing. As a result, sweetened zero-calorie drinks sometimes score better than natural juices, and highly processed cereal bars can outperform minimally processed whole foods.
 
 Another solution is the NOVA classification system, which categorizes foods based on their level of processing. Less processed foods receive higher ratings, while heavily processed foods receive lower ones. Although NOVA is part of broader efforts to promote healthier food choices in several countries, Canada, the UK, and the US mainly use it in research rather than official guidelines or consumer labeling.
+
+![NOVA System](tools/nova_system.png)
 
 So why not combine the best elements of these approaches into one? After all, consumers deserve full clarity about what they are feeding themselves and their families — and existing systems simply do not provide it. This creates real challenges, because not everyone understands what an ingredient like E301 is or how a high energy value might affect their personal health.
 
@@ -35,6 +39,8 @@ A single request triggers a coordinated system where each agent knows exactly wh
 ## Laying out the architecture for agentic food health system 👷‍♂️
 
 This system mainly uses the `SequentialAgent` workflow, which allows agents to pass data to one another once they complete their analysis, while also utilizing single-chat sessions for isolated tasks.
+
+![Systems' architecture](tools/agents_workflow.png)
 
 ### User input
 
