@@ -32,9 +32,49 @@ With agents, the process becomes effortless.
 
 A single request triggers a coordinated system where each agent knows exactly what to do — one searches for all ingredient and nutritional details of the product and another analyzes the food safety and health impact based on real scientific data. This makes advanced food analysis not just possible, but accessible to everyone — from busy parents to health-conscious shoppers to governments. 
 
-### Laying out the architecture for agentic food health system 👷‍♂️
+## Laying out the architecture for agentic food health system 👷‍♂️
 
 This system mainly uses the `SequentialAgent` workflow, which allows agents to pass data to one another once they complete their analysis, while also utilizing single-chat sessions for isolated tasks.
+
+### User input
+
+The system begins with a simple action: a user asks a question about any food product — for example, “Is Diet Coke safe?” or “Tell me about Snickers.” From that moment, a chain of specialized AI agents collaborates to deliver a precise, science-based safety verdict.
+
+### WHO Agent: `who_agent`
+
+The first agent in the pipeline is the WHO Agent, which acts as a global standardizer. Its role is to interpret the user’s question and convert it into a clean, unambiguous product name that downstream agents can reliably process.
+
+- **User input:** “Is Diet Coke safe?”
+
+- **WHO Agent output:** “Diet Coke”
+
+By normalizing the request, it ensures that every subsequent step is consistent, regardless of how the user phrases their question.
+
+### Ingredient Scout Agent: `ingredient_scout_agent`
+
+Next, the standardized product name is passed to the Ingredient Scout agent. Using in-built google_search tool, this agent performs targeted searches across grocery stores, retailer databases, and publicly available product listings to extract:
+
+- full ingredient lists
+
+- nutrition facts tables
+
+It uses tools such as structured search queries to gather verified data, ensuring that the information fed into the analysis stage is accurate and up to date.
+
+This stage acts as the system’s “data collection engine,” transforming a simple product name into a detailed nutritional profile.
+
+### Verdict Vector Agent: `verdict_vector_agent`
+
+Once the ingredient and nutrition data is compiled, it is sent to the Verdict Vector Agent, the system’s analytical core.
+
+This agent evaluates the product through multiple lenses:
+
+- additive safety (colorants, preservatives, emulsifiers, sweeteners)
+
+- nutritional impact (fats, sugars, salt, calories)
+
+- risk factors aligned with modern public health research
+
+It relies on built in google_search tool, as well as on frameworks inspired by EU Nutri-Score principles, WHO guidelines, and scientific literature (e.g., PubMed, Google Scholar).
 
 ## Prerequisites
 
