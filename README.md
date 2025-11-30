@@ -80,8 +80,8 @@ It relies on built in google_search tool, as well as on frameworks inspired by E
 
 ## Prerequisites
 
-- **Python 3.10+** installed on your system.
-- A **Google Gemini API Key**.
+- **Python 3.10+** installed on your system. ([You can download it here(https://www.python.org/downloads/)])
+- A **Google Gemini API Key**. ([You can get one here(https://aistudio.google.com/app/)])
 
 ## Setup
 
