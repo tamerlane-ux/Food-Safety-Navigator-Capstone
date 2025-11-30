@@ -76,7 +76,7 @@ This agent evaluates the product through multiple lenses:
 
 It relies on built in google_search tool, as well as on frameworks inspired by EU Nutri-Score principles, WHO guidelines, and scientific literature (e.g., PubMed, Google Scholar).
 
-### Installation
+# Installation
 
 ## Prerequisites
 
