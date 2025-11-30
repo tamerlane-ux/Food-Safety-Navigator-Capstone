@@ -76,6 +76,8 @@ This agent evaluates the product through multiple lenses:
 
 It relies on built in google_search tool, as well as on frameworks inspired by EU Nutri-Score principles, WHO guidelines, and scientific literature (e.g., PubMed, Google Scholar).
 
+### Installation
+
 ## Prerequisites
 
 - **Python 3.10+** installed on your system.
@@ -135,6 +137,5 @@ To start the agent system, run the main script:
 ```bash
 python main.py
 ```
-
 Follow the on-screen prompts to interact with the Food Safety Navigator.
 
