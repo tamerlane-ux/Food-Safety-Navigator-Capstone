@@ -82,6 +82,45 @@ This agent evaluates the product through multiple lenses:
 
 It relies on built in google_search tool, as well as on frameworks inspired by EU Nutri-Score principles, WHO guidelines, and scientific literature (e.g., PubMed, Google Scholar).
 
+# Project structure
+
+```bash
+Food Safety Navigator Capstone/
+│
+├── .env.example                 # Example environment variables template
+├── .gitignore                   # Git ignore configuration
+├── main.py                      # Main entry point for the application
+├── requirements.txt             # Python dependencies
+├── PROJECT_STRUCTURE.md         # This file - project structure documentation
+│
+├── .git/                        # Git version control directory
+├── .venv/                       # Python virtual environment
+│
+├── agents/                      # AI Agent definitions
+│   ├── __pycache__/            # Python bytecode cache
+│   ├── ingredient_scout_agent.py    # Agent for ingredient analysis
+│   ├── verdict_vector_agent.py      # Agent for verdict and research
+│   └── who_agent.py                 # Main WHO coordinator agent
+│
+├── tools/                       # Custom tools for agents
+│   └── __init__.py             # Tools package initialization
+│
+├── adk/                         # Google ADK integration
+│   └── __init__.py             # ADK package initialization
+│
+└── dotenv/                      # Environment variable management
+    ├── __init__.py             # Dotenv package initialization
+    ├── __main__.py             # Dotenv CLI entry point
+    ├── cli.py                  # Command-line interface
+    ├── ipython.py              # IPython integration
+    ├── main.py                 # Main dotenv functionality
+    ├── parser.py               # Environment file parser
+    ├── py.typed                # Type hints marker
+    ├── variables.py            # Variable handling
+    ├── version.py              # Version information
+    └── __pycache__/            # Python bytecode cache
+```
+
 # Installation
 
 ## Prerequisites
