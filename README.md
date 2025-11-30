@@ -80,8 +80,8 @@ It relies on built in google_search tool, as well as on frameworks inspired by E
 
 ## Prerequisites
 
-- **Python 3.10+** installed on your system. [You can download it here](https://www.python.org/downloads).
-- A **Google Gemini API Key**. [You can get one here](https://aistudio.google.com/app).
+- **Python 3.10+** installed on your system. [You can download it here](https://www.python.org/downloads)
+- A **Google Gemini API Key**. [You can get one here](https://aistudio.google.com/app)
 
 ## Setup
 
@@ -89,7 +89,7 @@ It relies on built in google_search tool, as well as on frameworks inspired by E
 
 **Windows / MacOS / Linux:**
 ```bash
-git clone [https://github.com/YOUR_USERNAME/Food-Safety-Navigator-Capstone.git](https://github.com/YOUR_USERNAME/Food-Safety-Navigator-Capstone.git)
+git clone https://github.com/YOUR_USERNAME/Food-Safety-Navigator-Capstone.git
 cd who-food-safety-navigator
 ```
 
